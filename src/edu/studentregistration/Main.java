@@ -6,8 +6,10 @@ import java.util.Scanner;
 
     public class Main {
         public static void main(String[] args) {
-
+           // Create a Scanner object for user input
             var scanner = new Scanner(System.in);
+
+            // Create an ArrayList to store student objects
             ArrayList<student> students = new ArrayList<>();
 
              while (true) {
@@ -32,6 +34,8 @@ import java.util.Scanner;
                     student.displayRegisteredMenu2();
                     int choice2 = scanner.nextInt();
                     scanner.nextLine();
+
+                   // user deride to input the information below
 
                     if (choice2 == 1) {
                         System.out.println("PLEASE PROVIDE THE FOLLOWING INFORMATION ");
