@@ -1,5 +1,7 @@
 package edu.studentregistration;
 
+
+//senior student class extends or inherited from student class
     public class seniorStudent extends student {
         private double GPA;
         private String studentID;
@@ -8,6 +10,8 @@ package edu.studentregistration;
         public seniorStudent() {
 
         }
+
+        //setter and getter of seniorStudent class
 
         public String getStudentID() {
             return this.studentID;
@@ -33,11 +37,15 @@ package edu.studentregistration;
             this.campus = campus;
         }
 
+
+        // creating  Constructors of senior class with parameter
         public seniorStudent(String fullName, int age, String studentID, String sex, String department, double GPA, String campus) {
             super(fullName, age, sex, department);
             this.GPA = GPA;
         }
 
+        // methods that override from student class
+    @Override
         public  void displayInformation() {
             System.out.println("*************************************");
             super.displayInformation();

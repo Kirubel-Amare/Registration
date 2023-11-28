@@ -18,8 +18,6 @@ public class MainTest {
 
         studentTest.displayInformation();
 
-
-
     }
     @Test
     public void regularStudentTest(){
@@ -27,8 +25,6 @@ public class MainTest {
 
         regularStudentTest.setExamResult(500);
         Assert.assertEquals(500,regularStudentTest.getExamResult());
-
-
 
     }
     @Test
@@ -40,7 +36,6 @@ public class MainTest {
 
         seniorStudentTest.setCampus("main");
         Assert.assertEquals("main",seniorStudentTest.getCampus());
-
 
     }
     @Test
